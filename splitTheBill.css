@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+Html,
+body {
+    background: rgb(143, 202, 247);
+    width: 100%;
+    margin: 0 auto;
+    /*width and marging set to the page as an entire view*/
+}
+
+img {
+    width: 100%;
+    margin: 0 auto;
+    /*sets image to fill its parent space*/
+}
+
+header {
+    /* position: fixed; */
+    background-image: url("img/money.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -180px;
+    /*setting background pics like above to fit in screen best will distort the image though if its not equal to the viewport size (window size)*/
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    Height: 30%;
+    border: 1px solid silver;
+}
+
+nav.nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 0px auto;
+    padding: 2px 5px 2px 5px;
+}
+
+@keyframes change {
+    from {
+        background: rgb(14, 241, 219);
+    }
+    to {
+        background: rgb(82, 26, 26);
+        color: white;
+    }
+}
+
+
+/* the above @keyframes makes the nav items have a color transition - see .nav a:hover for the rest of it*/
+
+.nav a {
+    text-decoration: none;
+    /*background: rgb(14, 241, 219);*/
+    color: white;
+    opacity: 0.8;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    border: 2px outset silver;
+    font-size: 1.4rem;
+}
+
+.nav a:hover {
+    animation-name: change;
+    animation-duration: 3s;
+}
+
+
+/* above here is nav items*/
+
+.top {
+    padding-top: 0px;
+}
+
+.top p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+/*below here is footer items*/
+
+footer {
+    background: rgb(78, 235, 185);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.clickbelow {
+    font-size: 0.7rem;
+}
+
+div.socialMediaButton {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    padding: 5px;
+}
+
+img {
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+}
+
+.credit {
+    height: auto;
+    font-size: .5rem;
+}
+
+.copyright {
+    padding: 0px 5px 0px 5px;
+}
+
+.copyright p {
+    font-size: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
